@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/user-guide/custom-themes/">
+        <meta name="author" content="elstir Team">
+        <link rel="canonical" href="https://claudioperez.github.io/elstir/user-guide/custom-themes/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Custom Themes - MkDocs</title>
+        <title>Custom Themes - elstir</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../../css/extra.css" rel="stylesheet">
+
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -21,21 +22,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
-            ga('create', 'UA-27795084-5', 'mkdocs.org');
-            ga('send', 'pageview');
-        </script> 
+
+ 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
+                <a class="navbar-brand" href="../..">elstir</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
@@ -94,35 +96,35 @@
 </li>
                                 </ul>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../deploying-your-docs/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../plugins/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/claudioperez/elstir/" class="nav-link"><i class="fa fa-github"></i> GitHub
+                                    <!--</a>
                             </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
@@ -130,68 +132,40 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#custom-themes" class="nav-link">Custom themes</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#creating-a-custom-theme" class="nav-link">Creating a custom theme</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#basic-theme" class="nav-link">Basic theme</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#theme-files" class="nav-link">Theme Files</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#template-variables" class="nav-link">Template Variables</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#template-filters" class="nav-link">Template Filters</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#search-and-themes" class="nav-link">Search and themes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#packaging-themes" class="nav-link">Packaging Themes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        
+        
         </ul>
     </div>
 </div></div>
-                    <div class="col-md-9" role="main">
+                    
+
+                    
+                        <article class="col-md-8">
 
 <h1 id="custom-themes">Custom themes<a class="headerlink" href="#custom-themes" title="Permanent link"></a></h1>
 <p>A guide to creating and distributing custom themes.</p>
 <hr />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are looking for third party themes, they are listed in the MkDocs
-<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">community wiki</a>. If
+<p>If you are looking for third party themes, they are listed in the elstir
+<a href="https://github.com/elstir/elstir/wiki/elstir-Themes">community wiki</a>. If
 you want to share a theme you create, you should list it on the Wiki.</p>
 </div>
 <p>When creating a new theme, you can either follow the steps in this guide to
-create one from scratch or you can download the <code>mkdocs-basic-theme</code> as a
+create one from scratch or you can download the <code>elstir-basic-theme</code> as a
 basic, yet complete, theme with all the boilerplate required. <strong>You can find
-this base theme on <a href="https://github.com/mkdocs/mkdocs-basic-theme">GitHub</a></strong>.
+this base theme on <a href="https://github.com/elstir/elstir-basic-theme">GitHub</a></strong>.
 It contains detailed comments in the code to describe the different features
 and their usage.</p>
 <h2 id="creating-a-custom-theme">Creating a custom theme<a class="headerlink" href="#creating-a-custom-theme" title="Permanent link"></a></h2>
 <p>The bare minimum required for a custom theme is a <code>main.html</code> <a href="http://jinja.pocoo.org/docs/dev/">Jinja2 template</a>
 file which is placed in a directory that is <em>not</em> a child of the <a href="../configuration/#docs_dir">docs_dir</a>.
-Within <code>mkdocs.yml</code>, set the theme.<a href="../configuration/#custom_dir">custom_dir</a> option to the path of the
+Within <code>elstir.yml</code>, set the theme.<a href="../configuration/#custom_dir">custom_dir</a> option to the path of the
 directory containing <code>main.html</code>. The path should be relative to the
 configuration file. For example, given this example project layout:</p>
-<pre><code class="no-highlight">mkdocs.yml
+<pre><code class="no-highlight">elstir.yml
 docs/
     index.md
     about.md
@@ -200,7 +174,7 @@ custom_theme/
     ...
 </code></pre>
 
-<p>... you would include the following settings in <code>mkdocs.yml</code> to use the custom theme
+<p>... you would include the following settings in <code>elstir.yml</code> to use the custom theme
 directory:</p>
 <pre><code class="yaml">theme:
     name: null
@@ -214,20 +188,20 @@ configuration setting would be set to <code>null</code>. However, if the
 theme.<a href="../configuration/#custom_dir">custom_dir</a> configuration value is used in combination with an
 existing theme, the theme.<a href="../configuration/#custom_dir">custom_dir</a> can be used to replace only specific
 parts of a built-in theme. For example, with the above layout and if you set
-<code>name: "mkdocs"</code> then the <code>main.html</code> file in the theme.<a href="../configuration/#custom_dir">custom_dir</a> would
-replace the file of the same name in the <code>mkdocs</code> theme but otherwise the
-<code>mkdocs</code> theme would remain unchanged. This is useful if you want to make
+<code>name: "elstir"</code> then the <code>main.html</code> file in the theme.<a href="../configuration/#custom_dir">custom_dir</a> would
+replace the file of the same name in the <code>elstir</code> theme but otherwise the
+<code>elstir</code> theme would remain unchanged. This is useful if you want to make
 small adjustments to an existing theme.</p>
 <p>For more specific information, see <a href="../styling-your-docs/#using-the-theme-custom_dir">styling your docs</a>.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>A theme's <a href="#theme-configuration">configuration</a> defined in a <code>mkdocs_theme.yml</code> file is not loaded
+<p>A theme's <a href="#theme-configuration">configuration</a> defined in a <code>elstir_theme.yml</code> file is not loaded
 from <code>theme.custom_dir</code>. When an entire theme exists in <code>theme.custom_dir</code>
 and <code>theme.name</code> is set to <code>null</code>, then the entire theme configuration must
-be defined in the <a href="../configuration/#theme">theme</a> configuration option in the <code>mkdocs.yml</code> file.</p>
+be defined in the <a href="../configuration/#theme">theme</a> configuration option in the <code>elstir.yml</code> file.</p>
 <p>However, when a theme is <a href="#packaging-themes">packaged</a> up for distribution, and loaded using
-the <code>theme.name</code> configuration option, then a <code>mkdocs_theme.yml</code> file
+the <code>theme.name</code> configuration option, then a <code>elstir_theme.yml</code> file
 is required for the theme.</p>
 </div>
 <h2 id="basic-theme">Basic theme<a class="headerlink" href="#basic-theme" title="Permanent link"></a></h2>
@@ -243,17 +217,17 @@ is required for the theme.</p>
 &lt;/html&gt;
 </code></pre>
 
-<p>The body content from each page specified in <code>mkdocs.yml</code> is inserted using the
+<p>The body content from each page specified in <code>elstir.yml</code> is inserted using the
 <code>{{ page.content }}</code> tag. Style-sheets and scripts can be brought into this
 theme as with a normal HTML file. Navbars and tables of contents can also be
 generated and included automatically, through the <code>nav</code> and <code>toc</code> objects,
 respectively. If you wish to write your own theme, it is recommended to start
-with one of the <a href="https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes">built-in themes</a> and modify it accordingly.</p>
+with one of the <a href="https://github.com/elstir/elstir/tree/master/elstir/themes">built-in themes</a> and modify it accordingly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As MkDocs uses <a href="http://jinja.pocoo.org/">Jinja</a> as its template engine, you have access to all the
+<p>As elstir uses <a href="http://jinja.pocoo.org/">Jinja</a> as its template engine, you have access to all the
 power of Jinja, including <a href="http://jinja.pocoo.org/docs/dev/templates/#template-inheritance">template inheritance</a>. You may notice that the
-themes included with MkDocs make extensive use of template inheritance and
+themes included with elstir make extensive use of template inheritance and
 blocks, allowing users to easily override small bits and pieces of the
 templates from the theme <a href="../configuration/#custom_dir">custom_dir</a>. Therefore, the built-in themes are
 implemented in a <code>base.html</code> file, which <code>main.html</code> extends. Although not
@@ -275,9 +249,9 @@ listed in <a href="#static_templates">static_templates</a> are treated as templa
 extension.</p>
 <h3 id="theme-meta-files">Theme Meta Files<a class="headerlink" href="#theme-meta-files" title="Permanent link"></a></h3>
 <p>The various files required for packaging a theme are also ignored. Specifically,
-the <code>mkdocs_theme.yml</code> configuration file and any Python files.</p>
+the <code>elstir_theme.yml</code> configuration file and any Python files.</p>
 <h3 id="dot-files">Dot Files<a class="headerlink" href="#dot-files" title="Permanent link"></a></h3>
-<p>Theme authors can explicitly force MkDocs to ignore files by starting a file or
+<p>Theme authors can explicitly force elstir to ignore files by starting a file or
 directory name with a dot. Any of the following files would be ignored:</p>
 <pre><code class="text">.ignored.txt
 .ignored/file.txt
@@ -287,7 +261,7 @@ foo/.ignored/file.txt
 
 <h3 id="documentation-files">Documentation Files<a class="headerlink" href="#documentation-files" title="Permanent link"></a></h3>
 <p>All documentation files are ignored. Specifically, any Markdown files (using any
-of the file extensions supported by MKDocs). Additionally, any README files
+of the file extensions supported by elstir). Additionally, any README files
 which may exist in the theme directories are ignored.</p>
 <h2 id="template-variables">Template Variables<a class="headerlink" href="#template-variables" title="Permanent link"></a></h2>
 <p>Each template in a theme is built with a template context. These are the
@@ -299,8 +273,8 @@ example a 404.html page or search.html.</p>
 <h3 id="global-context">Global Context<a class="headerlink" href="#global-context" title="Permanent link"></a></h3>
 <p>The following variables are available globally on any template.</p>
 <h4 id="config">config<a class="headerlink" href="#config" title="Permanent link"></a></h4>
-<p>The <code>config</code> variable is an instance of MkDocs' config object generated from the
-<code>mkdocs.yml</code> config file. While you can use any config option, some commonly
+<p>The <code>config</code> variable is an instance of elstir' config object generated from the
+<code>elstir.yml</code> config file. While you can use any config option, some commonly
 used options include:</p>
 <ul>
 <li><a href="../configuration/#site_name">config.site_name</a></li>
@@ -355,12 +329,12 @@ navigation as a nested list.</p>
 </code></pre>
 
 <h4 id="base_url">base_url<a class="headerlink" href="#base_url" title="Permanent link"></a></h4>
-<p>The <code>base_url</code> provides a relative path to the root of the MkDocs project. While
+<p>The <code>base_url</code> provides a relative path to the root of the elstir project. While
 this can be used directly by prepending it to a local relative URL, it is best
 to use the <a href="#url">url</a> template filter, which is smarter about how it applies
 <code>base_url</code>.</p>
-<h4 id="mkdocs_version">mkdocs_version<a class="headerlink" href="#mkdocs_version" title="Permanent link"></a></h4>
-<p>Contains the current MkDocs version.</p>
+<h4 id="elstir_version">elstir_version<a class="headerlink" href="#elstir_version" title="Permanent link"></a></h4>
+<p>Contains the current elstir version.</p>
 <h4 id="build_date_utc">build_date_utc<a class="headerlink" href="#build_date_utc" title="Permanent link"></a></h4>
 <p>A Python datetime object that represents the date and time the documentation
 was built in UTC. This is useful for showing how recently the documentation
@@ -425,7 +399,7 @@ documentation page.</p>
 </code></pre>
 
 <h5 id="pageurl">page.url<a class="headerlink" href="#pageurl" title="Permanent link"></a></h5>
-<p>The URL of the page relative to the MkDocs <code>site_dir</code>. It is expected that this
+<p>The URL of the page relative to the elstir <code>site_dir</code>. It is expected that this
 be used with the <a href="#url">url</a> filter to ensure the URL is relative to the current
 page.</p>
 <pre><code class="django">&lt;a href=&quot;{{ page.url|url }}&quot;&gt;{{ page.title }}&lt;/a&gt;
@@ -495,7 +469,7 @@ of those attributes as defined below:</p>
 <h4 id="section">Section<a class="headerlink" href="#section" title="Permanent link"></a></h4>
 <p>A <code>section</code> navigation object defines a named section in the navigation and
 contains a list of child navigation objects. Note that sections do not contain
-URLs and are not links of any kind. However, by default, MkDocs sorts index
+URLs and are not links of any kind. However, by default, elstir sorts index
 pages to the top and the first child might be used as the URL for a section if a
 theme choses to do so.</p>
 <p>The following attributes are available on <code>section</code> objects:</p>
@@ -522,7 +496,7 @@ section objects.</p>
 section objects.</p>
 <h4 id="link">Link<a class="headerlink" href="#link" title="Permanent link"></a></h4>
 <p>A <code>link</code> navigation object contains a link which does not point to an internal
-MkDocs page. The following attributes are available on <code>link</code> objects:</p>
+elstir page. The following attributes are available on <code>link</code> objects:</p>
 <h5 id="linktitle">link.title<a class="headerlink" href="#linktitle" title="Permanent link"></a></h5>
 <p>The title of the link. This would generally be used as the label of the link.</p>
 <h5 id="linkurl">link.url<a class="headerlink" href="#linkurl" title="Permanent link"></a></h5>
@@ -553,9 +527,9 @@ following <code>extra</code> configuration:</p>
 <pre><code class="yaml">extra:
     version: 0.13.0
     links:
-        - https://github.com/mkdocs
-        - https://docs.readthedocs.org/en/latest/builds.html#mkdocs
-        - https://www.mkdocs.org/
+        - https://github.com/elstir
+        - https://docs.readthedocs.org/en/latest/builds.html#elstir
+        - https://github.com/claudioperez/elstir/
 </code></pre>
 
 <p>And then displayed with this HTML in the custom theme.</p>
@@ -572,7 +546,7 @@ following <code>extra</code> configuration:</p>
 
 <h2 id="template-filters">Template Filters<a class="headerlink" href="#template-filters" title="Permanent link"></a></h2>
 <p>In addition to Jinja's default filters, the following custom filters are
-available to use in MkDocs templates:</p>
+available to use in elstir templates:</p>
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link"></a></h3>
 <p>Normalizes a URL. Absolute URLs are passed through unaltered. If the URL is
 relative and the template context includes a page object, then the URL is
@@ -584,12 +558,12 @@ returned relative to the page object. Otherwise, the URL is returned with
 <h3 id="tojson">tojson<a class="headerlink" href="#tojson" title="Permanent link"></a></h3>
 <p>Safety convert a Python object to a value in a JavaScript script.</p>
 <pre><code class="django">&lt;script&gt;
-    var mkdocs_page_name = {{ page.title|tojson|safe }};
+    var elstir_page_name = {{ page.title|tojson|safe }};
 &lt;/script&gt;
 </code></pre>
 
 <h2 id="search-and-themes">Search and themes<a class="headerlink" href="#search-and-themes" title="Permanent link"></a></h2>
-<p>As of MkDocs version <em>0.17</em> client side search support has been added to MkDocs
+<p>As of elstir version <em>0.17</em> client side search support has been added to elstir
 via the <code>search</code> plugin. A theme needs to provide a few things for the plugin to
 work with the theme.</p>
 <p>While the <code>search</code> plugin is activated by default, users can disable the plugin
@@ -616,20 +590,20 @@ full search implementation to your theme.</p>
 <pre><code class="django">&lt;h1 id=&quot;search&quot;&gt;Search Results&lt;/h1&gt;
 
 &lt;form action=&quot;search.html&quot;&gt;
-  &lt;input name=&quot;q&quot; id=&quot;mkdocs-search-query&quot; type=&quot;text&quot; &gt;
+  &lt;input name=&quot;q&quot; id=&quot;elstir-search-query&quot; type=&quot;text&quot; &gt;
 &lt;/form&gt;
 
-&lt;div id=&quot;mkdocs-search-results&quot;&gt;
+&lt;div id=&quot;elstir-search-results&quot;&gt;
   Sorry, page not found.
 &lt;/div&gt;
 </code></pre>
 
 <p>The JavaScript in the plugin works by looking for the specific ID's used in the
 above HTML. The form input for the user to type the search query must be
-identified with <code>id="mkdocs-search-query"</code> and the div where the results will be
-placed must be identified with <code>id="mkdocs-search-results"</code>.</p>
+identified with <code>id="elstir-search-query"</code> and the div where the results will be
+placed must be identified with <code>id="elstir-search-results"</code>.</p>
 <p>The plugin supports the following options being set in the <a href="#theme-configuration">theme's
-configuration file</a>, <code>mkdocs_theme.yml</code>:</p>
+configuration file</a>, <code>elstir_theme.yml</code>:</p>
 <h3 id="include_search_page">include_search_page<a class="headerlink" href="#include_search_page" title="Permanent link"></a></h3>
 <p>Determines whether the search plugin expects the theme to provide a dedicated
 search page via a template located at <code>search/search.html</code>.</p>
@@ -638,7 +612,7 @@ and available at <code>search/search.html</code>. This method is used by the <co
 theme.</p>
 <p>When <code>include_search_page</code> is set to <code>false</code> or not defined, it is expected that
 the theme provide some other mechanisms for displaying search results. For
-example, the <code>mkdocs</code> theme displays results on any page via a modal.</p>
+example, the <code>elstir</code> theme displays results on any page via a modal.</p>
 <h3 id="search_index_only">search_index_only<a class="headerlink" href="#search_index_only" title="Permanent link"></a></h3>
 <p>Determines whether the search plugin should only generate a search index or a
 complete search solution.</p>
@@ -660,8 +634,8 @@ objects.</p>
 </code></pre>
 
 <p>If present, the <code>config</code> object contains the key/value pairs of config options
-defined for the plugin in the user's <code>mkdocs.yml</code> config file under
-<code>plugings.search</code>. The <code>config</code> object was new in MkDocs version <em>1.0</em>.</p>
+defined for the plugin in the user's <code>elstir.yml</code> config file under
+<code>plugings.search</code>. The <code>config</code> object was new in elstir version <em>1.0</em>.</p>
 <p>The <code>data</code> object contains a list of document objects. Each document object is
 made up of a <code>location</code> (URL), a <code>title</code>, and <code>text</code> which can be used to create
 a search index and/or display search results.</p>
@@ -669,12 +643,12 @@ a search index and/or display search results.</p>
 performance improvements for larger sites. Note that the pre-built index is only
 created if the user explicitly enables the <a href="../configuration/#prebuild_index">prebuild_index</a> config option.
 Themes should expect the index to not be present, but can choose to use the
-index when it is available. The <code>index</code> object was new in MkDocs version <em>1.0</em>.</p>
+index when it is available. The <code>index</code> object was new in elstir version <em>1.0</em>.</p>
 <h2 id="packaging-themes">Packaging Themes<a class="headerlink" href="#packaging-themes" title="Permanent link"></a></h2>
-<p>MkDocs makes use of <a href="https://packaging.python.org/en/latest/">Python packaging</a> to distribute themes. This comes with a
+<p>elstir makes use of <a href="https://packaging.python.org/en/latest/">Python packaging</a> to distribute themes. This comes with a
 few requirements.</p>
-<p>To see an example of a package containing one theme, see the <a href="https://mkdocs.github.io/mkdocs-bootstrap/">MkDocs Bootstrap
-theme</a> and to see a package that contains many themes, see the <a href="https://mkdocs.github.io/mkdocs-bootswatch/">MkDocs
+<p>To see an example of a package containing one theme, see the <a href="https://elstir.github.io/elstir-bootstrap/">elstir Bootstrap
+theme</a> and to see a package that contains many themes, see the <a href="https://elstir.github.io/elstir-bootswatch/">elstir
 Bootswatch theme</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -690,12 +664,12 @@ your theme, your users can more easily install it, they can rely on a default
 <p>The following layout is recommended for themes. Two files at the top level
 directory called <code>MANIFEST.in</code> and <code>setup.py</code> beside the theme directory which
 contains an empty <code>__init__.py</code> file, a theme configuration file
-(<code>mkdocs-theme.yml</code>), and your template and media files.</p>
+(<code>elstir-theme.yml</code>), and your template and media files.</p>
 <pre><code class="no-highlight">.
 |-- MANIFEST.in
 |-- theme_name
 |   |-- __init__.py
-|   |-- mkdocs-theme.yml
+|   |-- elstir-theme.yml
 |   |-- main.html
 |   |-- styles.css
 `-- setup.py
@@ -716,7 +690,7 @@ VERSION = '0.0.1'
 
 
 setup(
-    name=&quot;mkdocs-themename&quot;,
+    name=&quot;elstir-themename&quot;,
     version=VERSION,
     url='',
     license='',
@@ -726,7 +700,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     entry_points={
-        'mkdocs.themes': [
+        'elstir.themes': [
             'themename = theme_name',
         ]
     },
@@ -735,13 +709,13 @@ setup(
 </code></pre>
 
 <p>Fill in the URL, license, description, author and author email address.</p>
-<p>The name should follow the convention <code>mkdocs-themename</code> (like <code>mkdocs-
-bootstrap</code> and <code>mkdocs-bootswatch</code>), starting with MkDocs, using hyphens to
+<p>The name should follow the convention <code>elstir-themename</code> (like <code>elstir-
+bootstrap</code> and <code>elstir-bootswatch</code>), starting with elstir, using hyphens to
 separate words and including the name of your theme.</p>
 <p>Most of the rest of the file can be left unedited. The last section we need to
-change is the entry_points. This is how MkDocs finds the theme(s) you are
+change is the entry_points. This is how elstir finds the theme(s) you are
 including in the package. The name on the left is the one that users will use
-in their mkdocs.yml and the one on the right is the directory containing your
+in their elstir.yml and the one on the right is the directory containing your
 theme files.</p>
 <p>The directory you created at the start of this section with the main.html file
 should contain all of the other theme files. The minimum requirement is that
@@ -750,15 +724,15 @@ it includes a <code>main.html</code> for the theme. It <strong>must</strong> als
 directory is a package.</p>
 <h3 id="theme-configuration">Theme Configuration<a class="headerlink" href="#theme-configuration" title="Permanent link"></a></h3>
 <p>A packaged theme is required to include a configuration file named
-<code>mkdocs_theme.yml</code> which is placed in the root of your template files. The file
+<code>elstir_theme.yml</code> which is placed in the root of your template files. The file
 should contain default configuration options for the theme. However, if the
 theme offers no configuration options, the file is still required and can be
-left blank. A theme which is not packaged does not need a <code>mkdocs_theme.yml</code>
+left blank. A theme which is not packaged does not need a <code>elstir_theme.yml</code>
 file as that file is not loaded from <code>theme.custom_dir</code>.</p>
 <p>The theme author is free to define any arbitrary options deemed necessary and
 those options will be made available in the templates to control behavior.
 For example, a theme might want to make a sidebar optional and include the
-following in the <code>mkdocs_theme.yml</code> file:</p>
+following in the <code>elstir_theme.yml</code> file:</p>
 <pre><code class="yaml">show_sidebar: true
 </code></pre>
 
@@ -768,14 +742,14 @@ following in the <code>mkdocs_theme.yml</code> file:</p>
 {% endif %}
 </code></pre>
 
-<p>And the user could override the default in their project's <code>mkdocs.yml</code> config
+<p>And the user could override the default in their project's <code>elstir.yml</code> config
 file:</p>
 <pre><code class="yaml">theme:
     name: themename
     show_sidebar: false
 </code></pre>
 
-<p>In addition to arbitrary options defined by the theme, MkDocs defines a few
+<p>In addition to arbitrary options defined by the theme, elstir defines a few
 special options which alters its behavior:</p>
 <div class="admonition block">
 <h4 id="static_templates">static_templates<a class="headerlink" href="#static_templates" title="Permanent link"></a></h4>
@@ -794,21 +768,21 @@ plugins you may wish to support in your theme.</p>
 <p>With the above changes, your theme should now be ready to install. This can be
 done with pip, using <code>pip install .</code> if you are still in the same directory as
 the setup.py.</p>
-<p>Most Python packages, including MkDocs, are distributed on PyPI. To do this,
+<p>Most Python packages, including elstir, are distributed on PyPI. To do this,
 you should run the following command.</p>
 <pre><code class="no-highlight">python setup.py register
 </code></pre>
 
 <p>If you don't have an account setup, you should be prompted to create one.</p>
 <p>For a much more detailed guide, see the official Python packaging
-documentation for <a href="https://packaging.python.org/en/latest/distributing/">Packaging and Distributing Projects</a>.</p></div>
+documentation for <a href="https://packaging.python.org/en/latest/distributing/">Packaging and Distributing Projects</a>.</p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
             var base_url = "../..",
@@ -817,7 +791,7 @@ documentation for <a href="https://packaging.python.org/en/latest/distributing/"
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -831,16 +805,16 @@ documentation for <a href="https://packaging.python.org/en/latest/distributing/"
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

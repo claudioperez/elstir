@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/user-guide/writing-your-docs/">
+        <meta name="author" content="elstir Team">
+        <link rel="canonical" href="https://claudioperez.github.io/elstir/user-guide/writing-your-docs/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Writing Your Docs - MkDocs</title>
+        <title>Writing Your Docs - elstir</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../../css/extra.css" rel="stylesheet">
+
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -21,21 +22,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
-            ga('create', 'UA-27795084-5', 'mkdocs.org');
-            ga('send', 'pageview');
-        </script> 
+
+ 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
+                <a class="navbar-brand" href="../..">elstir</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
@@ -94,35 +96,35 @@
 </li>
                                 </ul>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../.." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../styling-your-docs/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/claudioperez/elstir/" class="nav-link"><i class="fa fa-github"></i> GitHub
+                                    <!--</a>
                             </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
@@ -130,25 +132,17 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#writing-your-docs" class="nav-link">Writing your docs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#file-layout" class="nav-link">File layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#writing-with-markdown" class="nav-link">Writing with Markdown</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        
+        
         </ul>
     </div>
 </div></div>
-                    <div class="col-md-9" role="main">
+                    
+
+                    
+                        <article class="col-md-8">
 
 <h1 id="writing-your-docs">Writing your docs<a class="headerlink" href="#writing-your-docs" title="Permanent link"></a></h1>
 <p>How to layout and write your Markdown source files.</p>
@@ -158,9 +152,9 @@
 <a href="#writing-with-markdown">Writing with Markdown</a> below), and placed in the
 <a href="../configuration/#docs_dir">documentation directory</a>. By default, this directory
 will be named <code>docs</code> and will exist at the top level of your project, alongside
-the <code>mkdocs.yml</code> configuration file.</p>
+the <code>elstir.yml</code> configuration file.</p>
 <p>The simplest project you can create will look something like this:</p>
-<pre><code class="no-highlight">mkdocs.yml
+<pre><code class="no-highlight">elstir.yml
 docs/
     index.md
 </code></pre>
@@ -173,13 +167,13 @@ directory will be rendered in the built site regardless of any settings.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Files and directories with names which begin with a dot (for example:
-<code>.foo.md</code> or <code>.bar/baz.md</code>) are ignored by MkDocs, which matches the
+<code>.foo.md</code> or <code>.bar/baz.md</code>) are ignored by elstir, which matches the
 behavior of most web servers. There is no option to override this
 behavior.</p>
 </div>
 <p>You can also create multi-page documentation, by creating several Markdown
 files:</p>
-<pre><code class="no-highlight">mkdocs.yml
+<pre><code class="no-highlight">elstir.yml
 docs/
     index.md
     about.md
@@ -212,25 +206,25 @@ nested URLs, like so:</p>
 
 <p>Any files which are not identified as Markdown files (by their file extension)
 within the <a href="../configuration/#docs_dir">documentation directory</a> are copied by
-MkDocs to the built site unaltered. See [how to link to images and media]
+elstir to the built site unaltered. See [how to link to images and media]
 (#linking_to_images_and_media) below for details.</p>
 <h3 id="index-pages">Index pages<a class="headerlink" href="#index-pages" title="Permanent link"></a></h3>
 <p>When a directory is requested, by default, most web servers will return an index
 file (usually named <code>index.html</code>) contained within that directory if one exists.
 For that reason, the homepage in all of the examples above has been named
-<code>index.md</code>, which MkDocs will render to <code>index.html</code> when building the site.</p>
+<code>index.md</code>, which elstir will render to <code>index.html</code> when building the site.</p>
 <p>Many repository hosting sites provide special treatment for README files by
 displaying the contents of the README file when browsing the contents of a
-directory. Therefore, MkDocs will allow you to name your index pages as
+directory. Therefore, elstir will allow you to name your index pages as
 <code>README.md</code> instead of <code>index.md</code>. In that way, when users are browsing your
 source code, the repository host can display the index page of that directory as
-it is a README file. However, when MkDocs renders your site, the file will be
+it is a README file. However, when elstir renders your site, the file will be
 renamed to <code>index.html</code> so that the server will serve it as a proper index file.</p>
 <p>If both an <code>index.md</code> file and a <code>README.md</code> file are found in the same
 directory, then the <code>index.md</code> file is used and the <code>README.md</code> file is
 ignored.</p>
 <h3 id="configure-pages-and-navigation">Configure Pages and Navigation<a class="headerlink" href="#configure-pages-and-navigation" title="Permanent link"></a></h3>
-<p>The <a href="../configuration/#nav">nav</a> configuration setting in your <code>mkdocs.yml</code> file
+<p>The <a href="../configuration/#nav">nav</a> configuration setting in your <code>elstir.yml</code> file
 defines which pages are included in the global site navigation menu as well as
 the structure of that menu. If not provided, the navigation will be
 automatically created by discovering all the Markdown files in the
@@ -288,21 +282,21 @@ included with the built site, however, they will not be linked from the global
 navigation and will not be included in the <code>previous</code> and <code>next</code> links. Such
 pages will be "hidden" unless linked to directly.</p>
 <h2 id="writing-with-markdown">Writing with Markdown<a class="headerlink" href="#writing-with-markdown" title="Permanent link"></a></h2>
-<p>MkDocs pages must be authored in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, a lightweight markup language
+<p>elstir pages must be authored in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, a lightweight markup language
 which results in easy-to-read, easy-to-write plain text documents that can be
 converted to valid HTML documents in a predictable manner.</p>
-<p>MkDocs uses the <a href="https://python-markdown.github.io/">Python-Markdown</a> library to render Markdown documents to HTML.
+<p>elstir uses the <a href="https://python-markdown.github.io/">Python-Markdown</a> library to render Markdown documents to HTML.
 Python-Markdown is almost completely compliant with the <a href="https://daringfireball.net/projects/markdown/">reference
 implementation</a>, although there are a few very minor <a href="https://python-markdown.github.io/#differences">differences</a>.</p>
 <p>In addition to the base Markdown <a href="https://daringfireball.net/projects/markdown/syntax">syntax</a> which is common across all Markdown
-implementations, MkDocs includes support for extending the Markdown syntax with
-Python-Markdown <a href="https://python-markdown.github.io/extensions/">extensions</a>. See the MkDocs' <a href="../configuration/#markdown_extensions">markdown_extensions</a>
+implementations, elstir includes support for extending the Markdown syntax with
+Python-Markdown <a href="https://python-markdown.github.io/extensions/">extensions</a>. See the elstir' <a href="../configuration/#markdown_extensions">markdown_extensions</a>
 configuration setting for details on how to enable extensions.</p>
-<p>MkDocs includes some extensions by default, which are highlighted below.</p>
+<p>elstir includes some extensions by default, which are highlighted below.</p>
 <h3 id="internal-links">Internal links<a class="headerlink" href="#internal-links" title="Permanent link"></a></h3>
-<p>MkDocs allows you to interlink your documentation by using regular Markdown
+<p>elstir allows you to interlink your documentation by using regular Markdown
 <a href="https://daringfireball.net/projects/markdown/syntax#link">links</a>. However, there are a few additional benefits to formatting those links
-specifically for MkDocs as outlined below.</p>
+specifically for elstir as outlined below.</p>
 <h4 id="linking-to-pages">Linking to pages<a class="headerlink" href="#linking-to-pages" title="Permanent link"></a></h4>
 <p>When linking between pages in the documentation you can simply use the regular
 Markdown <a href="https://daringfireball.net/projects/markdown/syntax#link">linking</a> syntax, including the <em>relative path</em> to the Markdown
@@ -310,12 +304,12 @@ document you wish to link to.</p>
 <pre><code class="no-highlight">Please see the [project license](license.md) for further details.
 </code></pre>
 
-<p>When the MkDocs build runs, these Markdown links will automatically be
+<p>When the elstir build runs, these Markdown links will automatically be
 transformed into an HTML hyperlink to the appropriate HTML page.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Using absolute paths with links is not officially supported. Relative paths
-are adjusted by MkDocs to ensure they are always relative to the page. Absolute
+are adjusted by elstir to ensure they are always relative to the page. Absolute
 paths are not modified at all. This means that your links using absolute paths
 might work fine in your local environment but they might break once you deploy
 them to your production server.</p>
@@ -325,7 +319,7 @@ sure to include any relative directory path in the link.</p>
 <pre><code class="no-highlight">Please see the [project license](../about/license.md) for further details.
 </code></pre>
 
-<p>The <a href="https://python-markdown.github.io/extensions/toc/">toc</a> extension is used by MkDocs to generate an ID for every header in your
+<p>The <a href="https://python-markdown.github.io/extensions/toc/">toc</a> extension is used by elstir to generate an ID for every header in your
 Markdown documents. You can use that ID to link to a section within a target
 document by using an anchor link. The generated HTML will correctly transform
 the path portion of the link, and leave the anchor portion intact.</p>
@@ -336,7 +330,7 @@ the path portion of the link, and leave the anchor portion intact.</p>
 lowercase and any disallowed characters, including white-space, are converted to
 dashes. Consecutive dashes are then reduced to a single dash.</p>
 <p>There are a few configuration settings provided by the toc extension which you
-can set in your <code>mkdocs.yml</code> configuration file to alter the default behavior:</p>
+can set in your <code>elstir.yml</code> configuration file to alter the default behavior:</p>
 <dl>
 <dt><code>permalink</code>:</dt>
 <dd>
@@ -392,7 +386,7 @@ documentation site. These might include images and other media.</p>
 <p>For example, if your project documentation needed to include a <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">GitHub pages
 CNAME file</a> and a PNG formatted screenshot image then your file layout might
 look as follows:</p>
-<pre><code class="no-highlight">mkdocs.yml
+<pre><code class="no-highlight">elstir.yml
 docs/
     CNAME
     index.md
@@ -415,28 +409,28 @@ regular Markdown image syntaxes:</p>
 also be previewed if you're working on the documentation with a Markdown editor.</p>
 <h4 id="linking-from-raw-html">Linking from raw HTML<a class="headerlink" href="#linking-from-raw-html" title="Permanent link"></a></h4>
 <p>Markdown allows document authors to fall back to raw HTML when the Markdown
-syntax does not meets the author's needs. MkDocs does not limit Markdown in this
-regard. However, as all raw HTML is ignored by the Markdown parser, MkDocs is
+syntax does not meets the author's needs. elstir does not limit Markdown in this
+regard. However, as all raw HTML is ignored by the Markdown parser, elstir is
 not able to validate or convert links contained in raw HTML. When including
 internal links within raw HTML, you will need to manually format the link
 appropriately for the rendered document.</p>
 <h3 id="meta-data">Meta-Data<a class="headerlink" href="#meta-data" title="Permanent link"></a></h3>
-<p>MkDocs includes support for both YAML and MultiMarkdown style meta-data (often
+<p>elstir includes support for both YAML and MultiMarkdown style meta-data (often
 called front-matter). Meta-data consists of a series of keywords and values
 defined at the beginning of a Markdown document, which are stripped from the
 document prior to it being processing by Python-Markdown. The key/value pairs
-are passed by MkDocs to the page template. Therefore, if a theme includes
+are passed by elstir to the page template. Therefore, if a theme includes
 support, the values of any keys can be displayed on the page or used to control
 the page rendering. See your theme's documentation for information about which
 keys may be supported, if any.</p>
-<p>In addition to displaying information in a template, MkDocs includes support for
-a few predefined meta-data keys which can alter the behavior of MkDocs for that
+<p>In addition to displaying information in a template, elstir includes support for
+a few predefined meta-data keys which can alter the behavior of elstir for that
 specific page. The following keys are supported:</p>
 <dl>
 <dt><code>template</code>:</dt>
 <dd>
 <p>The template to use with the current page.</p>
-<p>By default, MkDocs uses the <code>main.html</code> template of a theme to render
+<p>By default, elstir uses the <code>main.html</code> template of a theme to render
 Markdown pages. You can use the <code>template</code> meta-data key to define a
 different template file for that specific page. The template file must be
 available on the path(s) defined in the theme's environment.</p>
@@ -444,7 +438,7 @@ available on the path(s) defined in the theme's environment.</p>
 <dt><code>title</code>:</dt>
 <dd>
 <p>The "title" to use for the document.</p>
-<p>MkDocs will attempt to determine the title of a document in the following
+<p>elstir will attempt to determine the title of a document in the following
 ways, in order:</p>
 <ol>
 <li>A title defined in the <a href="../configuration/#nav">nav</a> configuration setting for a document.</li>
@@ -478,10 +472,10 @@ This is the first paragraph of the document.
 <p>YAML is able to detect data types. Therefore, in the above example, the values
 of <code>title</code>, <code>summary</code> and <code>some_url</code> are strings, the value of <code>authors</code> is a
 list of strings and the value of <code>date</code> is a <code>datetime.date</code> object. Note that
-the YAML keys are case sensitive and MkDocs expects keys to be all lowercase.
+the YAML keys are case sensitive and elstir expects keys to be all lowercase.
 The top level of the YAML must be a collection of key/value pairs, which results
 in a Python <code>dict</code> being returned. If any other type is returned or the YAML
-parser encounters an error, then MkDocs does not recognize the section as
+parser encounters an error, then elstir does not recognize the section as
 meta-data, the page's <code>meta</code> attribute will be empty, and the section is not
 removed from the document.</p>
 <h4 id="multimarkdown-style-meta-data">MultiMarkdown Style Meta-Data<a class="headerlink" href="#multimarkdown-style-meta-data" title="Permanent link"></a></h4>
@@ -509,12 +503,12 @@ many lines as desired. All lines are joined into a single string.</p>
 line of a document must not be blank.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>MkDocs does not support YAML style deliminators (<code>---</code> or <code>...</code>) for
-MultiMarkdown style meta-data. In fact, MkDocs relies on the the presence or
+<p>elstir does not support YAML style deliminators (<code>---</code> or <code>...</code>) for
+MultiMarkdown style meta-data. In fact, elstir relies on the the presence or
 absence of the deliminators to determine whether YAML style meta-data or
 MultiMarkdown style meta-data is being used. If the deliminators are
 detected, but the content between the deliminators is not valid YAML
-meta-data, MkDocs does not attempt to parse the content as MultiMarkdown
+meta-data, elstir does not attempt to parse the content as MultiMarkdown
 style meta-data.</p>
 </div>
 <h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link"></a></h3>
@@ -570,14 +564,14 @@ def fn():
 </code></pre>
 
 <p>Note that fenced code blocks can not be indented. Therefore, they cannot be
-nested inside list items, blockquotes, etc.</p></div>
+nested inside list items, blockquotes, etc.</p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
             var base_url = "../..",
@@ -586,7 +580,7 @@ nested inside list items, blockquotes, etc.</p></div>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -600,16 +594,16 @@ nested inside list items, blockquotes, etc.</p></div>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/about/license/">
+        <meta name="author" content="elstir Team">
+        <link rel="canonical" href="https://claudioperez.github.io/elstir/about/license/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>License - MkDocs</title>
+        <title>License - elstir</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../../css/extra.css" rel="stylesheet">
+
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -21,21 +22,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
-            ga('create', 'UA-27795084-5', 'mkdocs.org');
-            ga('send', 'pageview');
-        </script> 
+
+ 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
+                <a class="navbar-brand" href="../..">elstir</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
@@ -94,35 +96,35 @@
 </li>
                                 </ul>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../contributing/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/claudioperez/elstir/" class="nav-link"><i class="fa fa-github"></i> GitHub
+                                    <!--</a>
                             </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
@@ -130,25 +132,17 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#license" class="nav-link">License</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#included-projects" class="nav-link">Included projects</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#mkdocs-license-bsd" class="nav-link">MkDocs License (BSD)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        
+        
         </ul>
     </div>
 </div></div>
-                    <div class="col-md-9" role="main">
+                    
+
+                    
+                        <article class="col-md-8">
 
 <h1 id="license">License<a class="headerlink" href="#license" title="Permanent link"></a></h1>
 <p>The legal stuff.</p>
@@ -159,7 +153,7 @@
 <li>ReadTheDocs theme - <a href="https://github.com/snide/sphinx_rtd_theme/blob/master/LICENSE">View license</a>.</li>
 </ul>
 <p>Many thanks to the authors and contributors of those wonderful projects.</p>
-<h2 id="mkdocs-license-bsd">MkDocs License (BSD)<a class="headerlink" href="#mkdocs-license-bsd" title="Permanent link"></a></h2>
+<h2 id="elstir-license-bsd">elstir License (BSD)<a class="headerlink" href="#elstir-license-bsd" title="Permanent link"></a></h2>
 <p>Copyright © 2014, Tom Christie. All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:</p>
@@ -177,14 +171,14 @@ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
             var base_url = "../..",
@@ -193,7 +187,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -207,16 +201,16 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

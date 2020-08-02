@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/user-guide/configuration/">
+        <meta name="author" content="elstir Team">
+        <link rel="canonical" href="https://claudioperez.github.io/elstir/user-guide/configuration/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Configuration - MkDocs</title>
+        <title>Configuration - elstir</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../../css/extra.css" rel="stylesheet">
+
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -21,21 +22,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
-            ga('create', 'UA-27795084-5', 'mkdocs.org');
-            ga('send', 'pageview');
-        </script> 
+
+ 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
+                <a class="navbar-brand" href="../..">elstir</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
@@ -94,35 +96,35 @@
 </li>
                                 </ul>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../styling-your-docs/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../deploying-your-docs/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/claudioperez/elstir/" class="nav-link"><i class="fa fa-github"></i> GitHub
+                                    <!--</a>
                             </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
@@ -130,48 +132,24 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#configuration" class="nav-link">Configuration</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#project-information" class="nav-link">Project information</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#documentation-layout" class="nav-link">Documentation layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#build-directories" class="nav-link">Build directories</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#preview-controls" class="nav-link">Preview controls</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#formatting-options" class="nav-link">Formatting options</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        
+        
         </ul>
     </div>
 </div></div>
-                    <div class="col-md-9" role="main">
+                    
+
+                    
+                        <article class="col-md-8">
 
 <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"></a></h1>
 <p>Guide to all available configuration settings.</p>
 <hr />
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
 <p>Project settings are always configured by using a YAML configuration file in the
-project directory named <code>mkdocs.yml</code>.</p>
+project directory named <code>elstir.yml</code>.</p>
 <p>As a minimum this configuration file must contain the <code>site_name</code> setting. All
 other settings are optional.</p>
 <h2 id="project-information">Project information<a class="headerlink" href="#project-information" title="Permanent link"></a></h2>
@@ -201,7 +179,7 @@ those domains, otherwise the hostname from the <code>repo_url</code>.</p>
 <h3 id="edit_uri">edit_uri<a class="headerlink" href="#edit_uri" title="Permanent link"></a></h3>
 <p>Path from the base <code>repo_url</code> to the docs directory when directly viewing a
 page, accounting for specifics of the repository host (e.g. GitHub, Bitbucket,
-etc), the branch, and the docs directory itself. MkDocs concatenates <code>repo_url</code>
+etc), the branch, and the docs directory itself. elstir concatenates <code>repo_url</code>
 and <code>edit_uri</code>, and appends the input path of the page.</p>
 <p>When set, and if your theme supports it, provides a link directly to the page in
 your source repository. This makes it easier to find and edit the source for the
@@ -266,7 +244,7 @@ header.</p>
 <p><strong>default</strong>: <code>null</code></p>
 <h3 id="google_analytics">google_analytics<a class="headerlink" href="#google_analytics" title="Permanent link"></a></h3>
 <p>Set the Google analytics tracking configuration.</p>
-<pre><code class="yaml">google_analytics: ['UA-36723568-3', 'mkdocs.org']
+<pre><code class="yaml">google_analytics: ['UA-36723568-3', 'elstir.org']
 </code></pre>
 
 <p><strong>default</strong>: <code>null</code></p>
@@ -287,14 +265,14 @@ for the site. A minimal navigation configuration could look like this:</p>
     - 'about.md'
 </code></pre>
 
-<p>All paths must be relative to the <code>mkdocs.yml</code> configuration file. See the
+<p>All paths must be relative to the <code>elstir.yml</code> configuration file. See the
 section on <a href="../writing-your-docs/#configure-pages-and-navigation">configuring pages and navigation</a> for a more detailed breakdown,
 including how to create sub-sections.</p>
 <p>Navigation items may also include links to external sites. While titles are
 optional for internal links, they are required for external links. An external
 link may be a full URL or a relative URL. Any path which is not found in the
 files is assumed to be an external link. See the section about [Meta-Data] on
-how MkDocs determines the page title of a document.</p>
+how elstir determines the page title of a document.</p>
 <pre><code class="yaml">nav:
     - Introduction: 'index.md'
     - 'about.md'
@@ -303,7 +281,7 @@ how MkDocs determines the page title of a document.</p>
 
 <p>In the above example, the first two items point to local files while the third
 points to an external site.</p>
-<p>However, sometimes the MkDocs site is hosted in a subdirectory of a project's
+<p>However, sometimes the elstir site is hosted in a subdirectory of a project's
 site and you may want to link to other parts of the same site without including
 the full domain. In that case, you may use an appropriate relative URL.</p>
 <pre><code class="yaml">site_url: https://example.com/foo/
@@ -315,12 +293,12 @@ nav:
 </code></pre>
 
 <p>In the above example, two different styles of external links are used. First
-note that the <code>site_url</code> indicates that the MkDocs site is hosted in the <code>/foo/</code>
+note that the <code>site_url</code> indicates that the elstir site is hosted in the <code>/foo/</code>
 subdirectory of the domain. Therefore, the <code>Home</code> navigation item is a relative
 link which steps up one level to the server root and effectively points to
 <code>https://example.com/</code>. The <code>Bug Tracker</code> item uses an absolute path from the
 server root and effectively points to <code>https://example.com/bugs/</code>. Of course, the
-<code>User Guide</code> points to a local MkDocs page.</p>
+<code>User Guide</code> points to a local elstir page.</p>
 <p><strong>default</strong>: By default <code>nav</code> will contain an alphanumerically sorted, nested
 list of all the Markdown files found within the <code>docs_dir</code> and its
 sub-directories. Index files will always be listed first within a sub-section.</p>
@@ -332,7 +310,7 @@ May be either a string or a set of key/value pairs.</p>
 of available themes visit <a href="../styling-your-docs/">styling your docs</a>.</p>
 <p>An example set of key/value pairs might look something like this:</p>
 <pre><code class="yaml">theme:
-    name: mkdocs
+    name: elstir
     custom_dir: my_theme_customizations/
     static_templates:
         - sitemap.html
@@ -361,7 +339,7 @@ the theme configuration.</p>
 <p>Any additional keywords supported by the theme can also be defined. See the
 documentation for the theme you are using for details.</p>
 </div>
-<p><strong>default</strong>: <code>'mkdocs'</code></p>
+<p><strong>default</strong>: <code>'elstir'</code></p>
 <h3 id="docs_dir">docs_dir<a class="headerlink" href="#docs_dir" title="Permanent link"></a></h3>
 <p>The directory containing the documentation source markdown files. This can
 either be a relative directory, in which case it is resolved relative to the
@@ -400,8 +378,8 @@ css subdirectory in your <a href="#docs_dir">docs_dir</a>.</p>
 See the example in <a href="#extra_css">extra_css</a> for usage.</p>
 <p><strong>default</strong>: <code>[]</code> (an empty list).</p>
 <h3 id="extra_templates">extra_templates<a class="headerlink" href="#extra_templates" title="Permanent link"></a></h3>
-<p>Set a list of templates in your <code>docs_dir</code> to be built by MkDocs. To see more
-about writing templates for MkDocs read the documentation about <a href="../custom-themes/">custom themes</a>
+<p>Set a list of templates in your <code>docs_dir</code> to be built by elstir. To see more
+about writing templates for elstir read the documentation about <a href="../custom-themes/">custom themes</a>
 and specifically the section about the <a href="../custom-themes/#template-variables">variables that are available</a> to
 templates. See the example in <a href="#extra_css">extra_css</a> for usage.</p>
 <p><strong>default</strong>: <code>[]</code> (an empty list).</p>
@@ -460,17 +438,17 @@ it creates links that point directly to the target <em>file</em> rather than the
 warning is raised. Set to <code>false</code> to print a warning and continue processing.</p>
 <p><strong>default</strong>: <code>false</code></p>
 <h3 id="dev_addr">dev_addr<a class="headerlink" href="#dev_addr" title="Permanent link"></a></h3>
-<p>Determines the address used when running <code>mkdocs serve</code>. Must be of the format
+<p>Determines the address used when running <code>elstir serve</code>. Must be of the format
 <code>IP:PORT</code>.</p>
 <p>Allows a custom default to be set without the need to pass it through the
-<code>--dev-addr</code> option every time the <code>mkdocs serve</code> command is called.</p>
+<code>--dev-addr</code> option every time the <code>elstir serve</code> command is called.</p>
 <p><strong>default</strong>: <code>'127.0.0.1:8000'</code></p>
 <h2 id="formatting-options">Formatting options<a class="headerlink" href="#formatting-options" title="Permanent link"></a></h2>
 <h3 id="markdown_extensions">markdown_extensions<a class="headerlink" href="#markdown_extensions" title="Permanent link"></a></h3>
-<p>MkDocs uses the <a href="https://python-markdown.github.io/">Python Markdown</a> library to translate Markdown files
+<p>elstir uses the <a href="https://python-markdown.github.io/">Python Markdown</a> library to translate Markdown files
 into HTML. Python Markdown supports a variety of <a href="https://python-markdown.github.io/extensions/">extensions</a>
 that customize how pages are formatted. This setting lets you enable a list of
-extensions beyond the ones that MkDocs uses by default (<code>meta</code>, <code>toc</code>, <code>tables</code>,
+extensions beyond the ones that elstir uses by default (<code>meta</code>, <code>toc</code>, <code>tables</code>,
 and <code>fenced_code</code>).</p>
 <p>For example, to enable the <a href="https://python-markdown.github.io/extensions/smarty/">SmartyPants typography extension</a>, use:</p>
 <pre><code class="yaml">markdown_extensions:
@@ -521,7 +499,7 @@ and available configuration options.</p>
 <h3 id="plugins">plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
 <p>A list of plugins (with optional configuration settings) to use when building
 the site . See the <a href="../plugins/">Plugins</a> documentation for full details.</p>
-<p>If the <code>plugins</code> config setting is defined in the <code>mkdocs.yml</code> config file, then
+<p>If the <code>plugins</code> config setting is defined in the <code>elstir.yml</code> config file, then
 any defaults (such as <code>search</code>) are ignored and you need to explicitly re-enable
 the defaults if you would like to continue using them:</p>
 <pre><code class="yaml">plugins:
@@ -534,9 +512,9 @@ setting to an empty list:</p>
 <pre><code class="yaml">plugins: []
 </code></pre>
 
-<p><strong>default</strong>: <code>['search']</code> (the "search" plugin included with MkDocs).</p>
+<p><strong>default</strong>: <code>['search']</code> (the "search" plugin included with elstir).</p>
 <h4 id="search">Search<a class="headerlink" href="#search" title="Permanent link"></a></h4>
-<p>A search plugin is provided by default with MkDocs which uses <a href="https://lunrjs.com/">lunr.js</a> as a
+<p>A search plugin is provided by default with elstir which uses <a href="https://lunrjs.com/">lunr.js</a> as a
 search engine. The following config options are available to alter the behavior
 of the search plugin:</p>
 <h5 id="separator"><strong>separator</strong><a class="headerlink" href="#separator" title="Permanent link"></a></h5>
@@ -592,7 +570,7 @@ supported:</p>
 <p>While search does support using multiple languages together, it is best not
 to add additional languages unless you really need them. Each additional
 language adds significant bandwidth requirements and uses more browser
-resources. Generally it is best to keep each instance of MkDocs to a single
+resources. Generally it is best to keep each instance of elstir to a single
 language.</p>
 </div>
 <div class="admonition note">
@@ -613,7 +591,7 @@ path. If this feature is enabled and fails for any reason, a warning is issued.
 You may use the <code>--strict</code> flag when building to cause such a failure to raise
 an error instead.</p>
 <p>Using <a href="http://lunr.readthedocs.io/">Lunr.py</a> setting <code>prebuild_index</code> to <code>python</code>. Lunr.py is installed
-as part of mkdocs and guarantees compatibility with Lunr.js even on languages
+as part of elstir and guarantees compatibility with Lunr.js even on languages
 other than english. If you find substantial inconsistencies or problems please
 report it on <a href="https://github.com/yeraydiazdiaz/lunr.py/issues">Lunr.py's issues</a> and fall back to the Node.js version.</p>
 <div class="admonition note">
@@ -624,14 +602,14 @@ improvement to your users. However, for larger sites (hundreds of pages),
 the bandwidth increase is relatively small and your users will notice a
 significant improvement in search performance.</p>
 </div>
-<p><strong>default</strong>: <code>False</code></p></div>
+<p><strong>default</strong>: <code>False</code></p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
             var base_url = "../..",
@@ -640,7 +618,7 @@ significant improvement in search performance.</p>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -654,16 +632,16 @@ significant improvement in search performance.</p>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

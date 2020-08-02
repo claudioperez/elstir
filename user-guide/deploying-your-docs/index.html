@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="MkDocs Team">
-        <link rel="canonical" href="https://www.mkdocs.org/user-guide/deploying-your-docs/">
+        <meta name="author" content="elstir Team">
+        <link rel="canonical" href="https://claudioperez.github.io/elstir/user-guide/deploying-your-docs/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Deploying Your Docs - MkDocs</title>
+        <title>Deploying Your Docs - elstir</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../../css/extra.css" rel="stylesheet">
+
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -21,21 +22,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
-            ga('create', 'UA-27795084-5', 'mkdocs.org');
-            ga('send', 'pageview');
-        </script> 
+
+ 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="../..">MkDocs</a>
+                <a class="navbar-brand" href="../..">elstir</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
@@ -94,35 +96,35 @@
 </li>
                                 </ul>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../configuration/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../custom-themes/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mkdocs/mkdocs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/claudioperez/elstir/" class="nav-link"><i class="fa fa-github"></i> GitHub
+                                    <!--</a>
                             </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
@@ -130,33 +132,17 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#deploying-your-docs" class="nav-link">Deploying your docs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#github-pages" class="nav-link">GitHub Pages</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#read-the-docs" class="nav-link">Read the Docs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#other-providers" class="nav-link">Other Providers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#404-pages" class="nav-link">404 Pages</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        
+        
         </ul>
     </div>
 </div></div>
-                    <div class="col-md-9" role="main">
+                    
+
+                    
+                        <article class="col-md-8">
 
 <h1 id="deploying-your-docs">Deploying your docs<a class="headerlink" href="#deploying-your-docs" title="Permanent link"></a></h1>
 <p>A basic guide to deploying your docs to various hosting providers</p>
@@ -172,13 +158,13 @@ which require a different work flow when deploying.</p>
 within the project repository (<code>gh-pages</code> by default). After you <code>checkout</code> the
 primary working branch (usually <code>master</code>) of the git repository where you
 maintain the source documentation for your project, run the following command:</p>
-<pre><code class="sh">mkdocs gh-deploy
+<pre><code class="sh">elstir gh-deploy
 </code></pre>
 
-<p>That's it! Behind the scenes, MkDocs will build your docs and use the
+<p>That's it! Behind the scenes, elstir will build your docs and use the
 <a href="https://github.com/davisp/ghp-import">ghp-import</a> tool to commit them to the <code>gh-pages</code> branch and push the
 <code>gh-pages</code> branch to GitHub.</p>
-<p>Use <code>mkdocs gh-deploy --help</code> to get a full list of options available for the
+<p>Use <code>elstir gh-deploy --help</code> to get a full list of options available for the
 <code>gh-deploy</code> command.</p>
 <p>Be aware that you will not be able to review the built site before it is pushed
 to GitHub. Therefore, you may want to verify any changes you make to the docs
@@ -197,19 +183,19 @@ with the GitHub account name. Therefore, you need working copies of two
 repositories on our local system. For example, consider the following file
 structure:</p>
 <pre><code class="no-highlight">my-project/
-    mkdocs.yml
+    elstir.yml
     docs/
 orgname.github.io/
 </code></pre>
 
 <p>After making and verifying updates to your project you need to change
 directories to the <code>orgname.github.io</code> repository and call the
-<code>mkdocs gh-deploy</code> command from there:</p>
+<code>elstir gh-deploy</code> command from there:</p>
 <pre><code class="sh">cd ../orgname.github.io/
-mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
+elstir gh-deploy --config-file ../my-project/elstir.yml --remote-branch master
 </code></pre>
 
-<p>Note that you need to explicitly point to the <code>mkdocs.yml</code> configuration file as
+<p>Note that you need to explicitly point to the <code>elstir.yml</code> configuration file as
 it is no longer in the current working directory. You also need to inform the
 deploy script to commit to the <code>master</code> branch. You may override the default
 with the <a href="../configuration/#remote_branch">remote_branch</a> configuration setting, but if you forget to change
@@ -228,48 +214,48 @@ run the command.</p>
 <h3 id="custom-domains">Custom Domains<a class="headerlink" href="#custom-domains" title="Permanent link"></a></h3>
 <p>GitHub Pages includes support for using a <a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site">Custom Domain</a> for your site. In
 addition to the steps documented by GitHub, you need to take one additional step
-so that MkDocs will work with your custom domain. You need to add a <code>CNAME</code> file
+so that elstir will work with your custom domain. You need to add a <code>CNAME</code> file
 to the root of your <a href="../configuration/#docs_dir">docs_dir</a>. The file must contain a single bare domain or
-subdomain on a single line (see MkDocs' own <a href="https://github.com/mkdocs/mkdocs/blob/master/docs/CNAME">CNAME file</a> as an example). You may
+subdomain on a single line (see elstir' own <a href="https://github.com/elstir/elstir/blob/master/docs/CNAME">CNAME file</a> as an example). You may
 create the file manually, or use GitHub's web interface to set up the custom
 domain (under Settings / Custom Domain). If you use the web interface, GitHub
 will create the <code>CNAME</code> file for you and save it to the root of your "pages"
 branch. So that the file does not get removed the next time you deploy, you need
 to copy the file to your <code>docs_dir</code>. With the file properly included in your
-<code>docs_dir</code>, MkDocs will include the file in your built site and push it to your
+<code>docs_dir</code>, elstir will include the file in your built site and push it to your
 "pages" branch each time you run the <code>gh-deploy</code> command.</p>
 <p>If you are having problems getting a custom domain to work, see GitHub's
 documentation on <a href="https://help.github.com/articles/troubleshooting-custom-domains/">Troubleshooting custom domains</a>.</p>
 <h2 id="read-the-docs">Read the Docs<a class="headerlink" href="#read-the-docs" title="Permanent link"></a></h2>
 <p><a href="https://readthedocs.org/">Read the Docs</a> offers free documentation hosting. You can import your docs
 using any major version control system, including Mercurial, Git, Subversion,
-and Bazaar. Read the Docs supports MkDocs out-of-the-box. Follow the
-<a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html">instructions</a> on their site to arrange the files in your repository properly,
+and Bazaar. Read the Docs supports elstir out-of-the-box. Follow the
+<a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-elstir.html">instructions</a> on their site to arrange the files in your repository properly,
 create an account and point it at your publicly hosted repository. If properly
 configured, your documentation will update each time you push commits to your
 public repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To benefit from all of the <a href="https://docs.readthedocs.io/en/latest/features.html">features</a> offered by Read the Docs, you will need
-to use the <a href="../styling-your-docs/#readthedocs">Read the Docs theme</a> which ships with MkDocs. The various
+to use the <a href="../styling-your-docs/#readthedocs">Read the Docs theme</a> which ships with elstir. The various
 themes which may be referenced in Read the Docs' documentation are Sphinx
-specific themes and will not work with MkDocs.</p>
+specific themes and will not work with elstir.</p>
 </div>
 <h2 id="other-providers">Other Providers<a class="headerlink" href="#other-providers" title="Permanent link"></a></h2>
 <p>Any hosting provider which can serve static files can be used to serve
-documentation generated by MkDocs. While it would be impossible to document how
+documentation generated by elstir. While it would be impossible to document how
 to upload the docs to every hosting provider out there, the following guidelines
 should provide some general assistance.</p>
-<p>When you build your site (using the <code>mkdocs build</code> command), all of the files
+<p>When you build your site (using the <code>elstir build</code> command), all of the files
 are written to the directory assigned to the <a href="../configuration/#site_dir">site_dir</a> configuration option
-(defaults to <code>"site"</code>) in your <code>mkdocs.yaml</code> config file. Generally, you will
+(defaults to <code>"site"</code>) in your <code>elstir.yaml</code> config file. Generally, you will
 simply need to copy the contents of that directory to the root directory of your
 hosting provider's server. Depending on your hosting provider's setup, you may
 need to use a graphical or command line <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">ftp</a>, <a href="https://en.wikipedia.org/wiki/Secure_Shell">ssh</a> or <a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a> client to transfer
 the files.</p>
 <p>For example, a typical set of commands from the command line might look
 something like this:</p>
-<pre><code class="sh">mkdocs build
+<pre><code class="sh">elstir build
 scp -r ./site user@host:/path/to/server/root
 </code></pre>
 
@@ -280,18 +266,18 @@ your hosts' file system.</p>
 <p>See your host's documentation for specifics. You will likely want to search
 their documentation for "ftp" or "uploading site".</p>
 <h2 id="404-pages">404 Pages<a class="headerlink" href="#404-pages" title="Permanent link"></a></h2>
-<p>When MkDocs builds the documentation it will include a 404.html file in the
+<p>When elstir builds the documentation it will include a 404.html file in the
 <a href="../configuration/#site_dir">build directory</a>. This file will be automatically used when
 deploying to <a href="#github-pages">GitHub</a> but only on a custom domain. Other web
 servers may be configured to use it but the feature won't always be available.
-See the documentation for your server of choice for more information.</p></div>
+See the documentation for your server of choice for more information.</p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
             var base_url = "../..",
@@ -300,7 +286,7 @@ See the documentation for your server of choice for more information.</p></div>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -314,16 +300,16 @@ See the documentation for your server of choice for more information.</p></div>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

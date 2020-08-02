@@ -26,7 +26,7 @@ function formatResult (location, title, summary) {
 }
 
 function displayResults (results) {
-  var search_results = document.getElementById("mkdocs-search-results");
+  var search_results = document.getElementById("elstir-search-results");
   while (search_results.firstChild) {
     search_results.removeChild(search_results.firstChild);
   }
@@ -42,7 +42,7 @@ function displayResults (results) {
 }
 
 function doSearch () {
-  var query = document.getElementById('mkdocs-search-query').value;
+  var query = document.getElementById('elstir-search-query').value;
   if (query.length > min_search_length) {
     if (!window.Worker) {
       displayResults(search(query));
@@ -56,7 +56,7 @@ function doSearch () {
 }
 
 function initSearch () {
-  var search_input = document.getElementById('mkdocs-search-query');
+  var search_input = document.getElementById('elstir-search-query');
   if (search_input) {
     search_input.addEventListener("keyup", doSearch);
   }
