@@ -348,12 +348,13 @@ def get_themes():
 
     themes = {}
     eps = importlib_metadata.entry_points(group='elstir.themes')
-    builtins = [ep.name for ep in eps if ep.dist.name == 'elstir']
+    eps += importlib_metadata.entry_points(group='mkdocs.themes')
+
+    builtins = [ep.name for ep in eps if ep.dist.name == 'elstir' ]
 
     for theme in eps:
-
         if theme.name in builtins and theme.dist.name != 'elstir':
-            raise exceptions.ConfigurationError(
+            log.warning(
                 f"The theme '{theme.name}' is a builtin theme but the package '{theme.dist.name}' "
                 "attempts to provide a theme with the same name."
             )

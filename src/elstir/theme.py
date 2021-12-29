@@ -84,6 +84,12 @@ class Theme:
                 if theme_config is None:
                     theme_config = {}
         except OSError as e:
+            file_path = os.path.join(theme_dir, 'mkdocs_theme.yml')
+            with open(file_path, 'rb') as f:
+                theme_config = utils.yaml_load(f)
+                if theme_config is None:
+                    theme_config = {}
+        except Exception as e:
             log.debug(e)
             raise ValidationError(
                 "The theme '{}' does not appear to have a configuration file. "
